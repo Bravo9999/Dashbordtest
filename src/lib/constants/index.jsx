@@ -1,10 +1,11 @@
 import {
 	HiOutlineViewGrid,
 	HiOutlineCube,
-	HiOutlineShoppingCart,
+	HiMail,
 	HiOutlineUsers,
 	HiOutlineDocumentText,
 	HiOutlineAnnotation,
+	HiPhone,
 	HiOutlineQuestionMarkCircle,
 	HiOutlineCog
 } from 'react-icons/hi'
@@ -17,20 +18,20 @@ export const DASHBOARD_SIDEBAR_LINKS = [
 		icon: <HiOutlineViewGrid />
 	},
 	{
-		key: 'products',
-		label: 'Products',
+		key: 'Add Post',
+		label: 'Add Post',
 		path: '/products',
 		icon: <HiOutlineCube />
 	},
 	{
-		key: 'orders',
-		label: 'Orders',
+		key: 'News Letters',
+		label: 'News Letters',
 		path: '/orders',
-		icon: <HiOutlineShoppingCart />
+		icon: <HiMail />
 	},
 	{
-		key: 'customers',
-		label: 'Customers',
+		key: 'Roles & Permissions',
+		label: 'Roles & Permissions',
 		path: '/customers',
 		icon: <HiOutlineUsers />
 	},
@@ -45,6 +46,13 @@ export const DASHBOARD_SIDEBAR_LINKS = [
 		label: 'Messages',
 		path: '/messages',
 		icon: <HiOutlineAnnotation />
+	},
+	{
+		key: 'contacts',
+		label: 'Contacts',
+		path: '/Contacts',
+		icon: <HiPhone />
+
 	}
 ]
 
