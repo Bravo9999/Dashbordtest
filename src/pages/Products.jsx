@@ -1,4 +1,5 @@
 import React, { useState } from 'react';
+import { useNavigate } from 'react-router-dom';
 
 export default function Products() {
   const productData = [
@@ -13,16 +14,23 @@ export default function Products() {
 
   const [products] = useState(productData);
   const [openDropdownId, setOpenDropdownId] = useState(null);
+  const navigate = useNavigate();
 
   const toggleDropdown = (id) => {
     setOpenDropdownId(openDropdownId === id ? null : id);
+  };
+
+  const handleAddUser = () => {
+    navigate('/addusers');
   };
 
   return (
     <div className="p-4">
       <div className="flex justify-between items-center mb-4">
         <h2 className="text-xl font-semibold">Users</h2>
-        <button className="bg-green-500 text-white p-2 rounded">+ Add User</button>
+        <button className="bg-green-500 text-white p-2 rounded hover:bg-blue-700" onClick={handleAddUser}>
+          + Add User
+        </button>
       </div>
       <div className="overflow-x-auto">
         <table className="min-w-full bg-white">
@@ -68,8 +76,6 @@ export default function Products() {
                       <div className="origin-top-right absolute right-0 mt-2 w-56 rounded-md shadow-lg bg-white ring-1 ring-black ring-opacity-5 focus:outline-none z-10" role="menu" aria-orientation="vertical" aria-labelledby="menu-button" tabIndex="-1">
                         <div className="py-1" role="none">
                           <button className="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100" role="menuitem" tabIndex="-1" id="menu-item-0">Change User Role</button>
-                          <button className="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100" role="menuitem" tabIndex="-1" id="menu-item-1">Enable Reward System</button>
-                          <button className="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100" role="menuitem" tabIndex="-1" id="menu-item-2">Ban User</button>
                           <button className="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100" role="menuitem" tabIndex="-1" id="menu-item-3">Edit</button>
                           <button className="text-gray-700 block px-4 py-2 text-sm hover:bg-gray-100" role="menuitem" tabIndex="-1" id="menu-item-4">Delete</button>
                         </div>
