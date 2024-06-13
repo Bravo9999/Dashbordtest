@@ -2,9 +2,10 @@ import React from 'react'
 import { PieChart, Pie, Cell, ResponsiveContainer, Legend } from 'recharts'
 
 const data = [
-	{ name: 'Male', value: 540 },
-	{ name: 'Female', value: 620 },
-	{ name: 'Other', value: 210 }
+	{ name: 'Tech', value: 540 },
+	{ name: 'Sports', value: 620 },
+	{ name: 'Tech', value: 540 },
+	
 ]
 
 const RADIAN = Math.PI / 180
@@ -24,11 +25,11 @@ const renderCustomizedLabel = ({ cx, cy, midAngle, innerRadius, outerRadius, per
 
 export default function BuyerProfilePieChart() {
 	return (
-		<div className="w-[20rem] h-[22rem] bg-white p-4 rounded-sm border border-gray-200 flex flex-col">
-			<strong className="text-gray-700 font-medium">Buyer Profile</strong>
+		<div className="w-[60rem] h-[22rem] bg-white p-4 rounded-sm border border-gray-200 flex flex-col">
+			<strong className="text-gray-700 font-medium">News acording to Category</strong>
 			<div className="mt-3 w-full flex-1 text-xs">
 				<ResponsiveContainer width="100%" height="100%">
-					<PieChart width={400} height={300}>
+					<PieChart width={600} height={600}>
 						<Pie
 							data={data}
 							cx="50%"

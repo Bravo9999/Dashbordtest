@@ -2,7 +2,7 @@ import classNames from 'classnames'
 import React from 'react'
 import { Link } from 'react-router-dom'
 
-const popularProducts = [
+const popularNews = [
 	{
 		id: '3432',
 		product_name: 'Macbook M1 Pro 14"',
@@ -47,12 +47,12 @@ const popularProducts = [
 	}
 ]
 
-function PopularProducts() {
+function PopularNews() {
 	return (
 		<div className="w-[20rem] bg-white p-4 rounded-sm border border-gray-200">
 			<strong className="text-gray-700 font-medium">Popular Products</strong>
 			<div className="mt-4 flex flex-col gap-3">
-				{popularProducts.map((product) => (
+				{popularNews.map((product) => (
 					<Link
 						key={product.id}
 						to={`/product/${product.id}`}
@@ -88,4 +88,4 @@ function PopularProducts() {
 	)
 }
 
-export default PopularProducts
+export default PopularNews
