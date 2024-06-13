@@ -1,7 +1,7 @@
 import {
 	HiOutlineViewGrid,
-	HiOutlineCube,
-	HiMail,
+	HiOutlineUserAdd,
+	HiCloudUpload,
 	HiOutlineUsers,
 	HiOutlineDocumentText,
 	HiOutlineAnnotation,
@@ -18,26 +18,26 @@ export const DASHBOARD_SIDEBAR_LINKS = [
 		icon: <HiOutlineViewGrid />
 	},
 	{
-		key: 'Add Post',
-		label: 'Add Post',
+		key: ' Users',
+		label: 'Users',
 		path: '/products',
-		icon: <HiOutlineCube />
-	},
-	{
-		key: 'News Letters',
-		label: 'News Letters',
-		path: '/orders',
-		icon: <HiMail />
-	},
-	{
-		key: 'Roles & Permissions',
-		label: 'Roles & Permissions',
-		path: '/customers',
 		icon: <HiOutlineUsers />
 	},
 	{
-		key: 'transactions',
-		label: 'Transactions',
+		key: 'Addusers',
+		label: 'Add users',
+		path: '/Addusers',
+		icon:  <HiOutlineUserAdd />
+	},
+	{
+		key: 'Addpost',
+		label: 'Add post',
+		path: '/Addposts',
+		icon: <HiCloudUpload />
+	},
+	{
+		key: 'Add User',
+		label: 'Add User	',
 		path: '/transactions',
 		icon: <HiOutlineDocumentText />
 	},
