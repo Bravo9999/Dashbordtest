@@ -1,4 +1,4 @@
-export function getOrderStatus(status) {
+export function getNewsStatus(status) {
 	switch (status) {
 		case 'PLACED':
 			return (

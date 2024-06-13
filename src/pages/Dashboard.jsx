@@ -1,8 +1,8 @@
 import React from 'react'
 import DashboardStatsGrid from '../components/DashboardStatsGrid'
-import RecentOrders from '../components/RecentOrders'
+import RecentNews from '../components/RecentNews'
 import BuyerProfilePieChart from '../components/BuyerProfilePieChart'
-import PopularProducts from '../components/PopularProducts'
+import PopularNews from '../components/PopularNews'
 
 export default function Dashboard() {
 	return (
@@ -13,8 +13,8 @@ export default function Dashboard() {
 				<BuyerProfilePieChart />
 			</div>
 			<div className="flex flex-row gap-4 w-full">
-				<RecentOrders />
-				<PopularProducts />
+				<RecentNews />
+				<PopularNews />
 			</div>
 		</div>
 	)

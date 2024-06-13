@@ -1,9 +1,9 @@
 import React from 'react'
 import { format } from 'date-fns'
 import { Link } from 'react-router-dom'
-import { getOrderStatus } from '../lib/helpers'
+import { getNewsStatus } from '../lib/helpers'
 
-const recentOrderData = [
+const recentNewsData = [
 	{
 		id: '1',
 		product_id: '4324',
@@ -66,10 +66,10 @@ const recentOrderData = [
 	}
 ]
 
-export default function RecentOrders() {
+export default function RecentNews() {
 	return (
 		<div className="bg-white px-4 pt-3 pb-4 rounded-sm border border-gray-200 flex-1">
-			<strong className="text-gray-700 font-medium">Recent Orders</strong>
+			<strong className="text-gray-700 font-medium">Recent News</strong>
 			<div className="border-x border-gray-200 rounded-sm mt-3">
 				<table className="w-full text-gray-700">
 					<thead>
@@ -84,7 +84,7 @@ export default function RecentOrders() {
 						</tr>
 					</thead>
 					<tbody>
-						{recentOrderData.map((order) => (
+						{recentNewsData.map((order) => (
 							<tr key={order.id}>
 								<td>
 									<Link to={`/order/${order.id}`}>#{order.id}</Link>
@@ -98,7 +98,7 @@ export default function RecentOrders() {
 								<td>{format(new Date(order.order_date), 'dd MMM yyyy')}</td>
 								<td>{order.order_total}</td>
 								<td>{order.shipment_address}</td>
-								<td>{getOrderStatus(order.current_order_status)}</td>
+								<td>{getNewsStatus(order.current_order_status)}</td>
 							</tr>
 						))}
 					</tbody>
