@@ -10,7 +10,7 @@ const linkClass =
 
 export default function Sidebar() {
 	return (
-		<div className="bg-neutral-900 w-60 p-3 flex flex-col">
+		<div className="bg-indigo-950 w-60 p-3 flex flex-col">
 			<div className="flex items-center gap-2 px-1 py-3">
 				<FcBullish fontSize={24} />
 				<span className="text-neutral-200 text-lg">AdminPannel</span>

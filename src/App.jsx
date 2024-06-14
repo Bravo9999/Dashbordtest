@@ -5,6 +5,7 @@ import Dashboard from './pages/Dashboard'
 import Products from './pages/Products'
 import Addusers from './pages/Addusers'
 import Addposts from './pages/Addposts'
+import Profile from './pages/Profile';
 
 function App() {
     return (
@@ -16,7 +17,7 @@ function App() {
                     <Route path="addusers" element={<Addusers />} />
                     <Route path="addposts" element={<Addposts />} />
                 </Route>
-                <Route path="/register" element={<Register />} />
+                <Route path="/profile" element={<Profile />} />
             </Routes>
         </Router>
     )

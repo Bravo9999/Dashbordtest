@@ -22,7 +22,7 @@ export default function DashboardStatsGrid() {
 				<div className="pl-4">
 					<span className="text-sm text-gray-500 font-light">Pending Posts</span>
 					<div className="flex items-center">
-						<strong className="text-xl text-gray-700 font-semibold">$3423</strong>
+						<strong className="text-xl text-gray-700 font-semibold">23</strong>
 					</div>
 				</div>
 			</BoxWrapper>
@@ -33,7 +33,7 @@ export default function DashboardStatsGrid() {
 				<div className="pl-4">
 					<span className="text-sm text-gray-500 font-light">Total Users</span>
 					<div className="flex items-center">
-						<strong className="text-xl text-gray-700 font-semibold">12313</strong>
+						<strong className="text-xl text-gray-700 font-semibold">4</strong>
 					</div>
 				</div>
 			</BoxWrapper>
