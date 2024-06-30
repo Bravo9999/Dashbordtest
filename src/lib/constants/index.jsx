@@ -30,6 +30,12 @@ export const DASHBOARD_SIDEBAR_LINKS = [
 		icon:  <HiOutlineUserAdd />
 	},
 	{
+		key: 'AddCategory',
+		label: 'Add Category',
+		path: '/addCategory',
+		icon:  <HiOutlineDocumentText />
+	},
+	{
 		key: 'Addpost',
 		label: 'Add post',
 		path: '/Addposts',
